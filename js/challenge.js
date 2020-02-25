@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(counter)
     })
 
-    const newComment = document.getElementById('comment-input') 
-    const findList = document.getElementById("list")
-    const commentForm = document.getElementById('comment-form')
+    const findList = document.getElementById("list") 
+    const commentForm = document.getElementById('comment-form')//parent
+    const newComment = document.getElementById('comment-input')//child
     
     commentForm.addEventListener("submit", event => {
         event.preventDefault()
